@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp">
+
+        <EditText
+            android:id="@+id/gstno"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/roundededittext"
+            android:textAlignment="center"
+            android:hint="GST Number"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/invoicetype"
+            android:layout_width="114dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:background="@drawable/roundededittext"></Spinner>
+
+
+        <EditText
+            android:id="@+id/custname"
+            android:layout_width="396dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/gstno"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_alignParentStart="true"
+
+            android:background="@drawable/roundededittext"
+            android:hint="Customer Name"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/invono"
+            android:layout_width="158dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/custname"
+            android:background="@drawable/roundededittext"
+            android:hint="Invoice Number"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
+
+            android:textAlignment="center" />
+
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="164dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignTop="@+id/invono"
+            android:background="@drawable/roundededittext"
+            android:inputType="date"
+            android:textAlignment="center" />
+
+
+        <Spinner
+            android:id="@+id/amounttype"
+            android:layout_width="139dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/invono"
+
+            android:textAlignment="center"
+
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundededittext"></Spinner>
+
+
+        <EditText
+            android:id="@+id/phno"
+            android:layout_width="185dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/invono"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundededittext"
+            android:textAlignment="center"
+
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+
+        <EditText
+            android:id="@+id/dest"
+            android:layout_width="156dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/amounttype"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Destination"
+            android:textAlignment="center"
+
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/chqno"
+            android:layout_width="169dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/amounttype"
+           android:layout_marginTop="10dp"
+            android:background="@drawable/roundededittext"
+            android:textAlignment="center"
+
+            android:hint="Cheque Number"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="396dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/dest"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Address"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/esugno"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/address"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundededittext"
+            android:hint="E-Sugam No"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/vhno"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/address"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundededittext"
+            android:hint="Vehicle Number"
+            android:inputType="textPersonName" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
